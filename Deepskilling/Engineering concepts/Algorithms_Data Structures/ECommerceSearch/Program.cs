@@ -5,7 +5,7 @@ namespace ECommerceSearch
     class Program
     {
         // Linear Search
-        static Product LinearSearch(Product[] products, int productId)
+        static Product? LinearSearch(Product[] products, int productId)
         {
             foreach (Product product in products)
             {
@@ -18,7 +18,7 @@ namespace ECommerceSearch
         }
 
         // Binary Search
-        static Product BinarySearch(Product[] products, int productId)
+        static Product? BinarySearch(Product[] products, int productId)
         {
             int low = 0;
             int high = products.Length - 1;
@@ -59,7 +59,7 @@ namespace ECommerceSearch
 
             Console.WriteLine(" Linear Search ");
 
-            Product result = LinearSearch(products, searchId);
+            Product? result = LinearSearch(products, searchId);
 
             if (result != null)
             {

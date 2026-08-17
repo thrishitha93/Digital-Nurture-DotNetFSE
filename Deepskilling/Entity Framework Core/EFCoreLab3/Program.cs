@@ -1,0 +1,1 @@
+Console.WriteLine("EF Core Lab 3 - Migration Setup Successful!");
