@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script>
+
+function addEvent(name){
+
+console.log(
+"Event Added:",
+name
+);
+
+}
+
+function registerUser(name){
+
+console.log(
+name+" Registered"
+);
+
+}
+
+function filterEventsByCategory(category){
+
+console.log(
+"Filtering:",
+category
+);
+
+}
+
+function registrationTracker(){
+
+let count=0;
+
+return function(){
+
+count++;
+
+return count;
+
+};
+
+}
+
+const track=
+registrationTracker();
+
+console.log(track());
+
+</script>
+
+</body>
+</html>

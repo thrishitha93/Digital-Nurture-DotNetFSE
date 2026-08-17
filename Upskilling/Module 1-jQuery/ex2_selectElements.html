@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exercise 2</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+
+    <h1>Original Heading</h1>
+    <p>This is the first paragraph.</p>
+    <p class="target-p">This is the second paragraph.</p>
+    <button id="hideBtn">Click Me</button>
+
+    <script>
+        $(document).ready(function() {
+            $("h1").text("Changed Heading");
+
+            $("#hideBtn").click(function() {
+                $(".target-p").hide();
+            });
+        });
+    </script>
+
+</body>
+</html>

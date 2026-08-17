@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Event Feedback</title>
+</head>
+<body>
+
+    <img id="eventImage" src="https://placehold.co/150x100" style="width: 150px;" alt="Event Image">
+
+    <form>
+        <label for="phone">Phone Number:</label>
+        <input type="text" id="phone">
+        <span id="phoneError" style="color: red; display: none;">Invalid phone number!</span>
+
+        <br><br>
+
+        <label for="eventFee">Event Type:</label>
+        <select id="eventFee">
+            <option value="">--Select--</option>
+            <option value="Free">Town Hall Meeting</option>
+            <option value="$10">Community Concert</option>
+        </select>
+        <span id="feeDisplay">Fee: </span>
+
+        <br><br>
+
+        <label for="feedback">Feedback:</label><br>
+        <textarea id="feedback"></textarea>
+        <p id="charCount">Characters: 0</p>
+
+        <button type="button" id="submitBtn">Submit</button>
+    </form>
+
+    <script>
+      //1 onblur 
+      const phone = document.getElementById('phone');
+      const phoneError = document.getElementById('phoneError');
+        phone.onblur = function(){
+            const errorSpan = document.getElementById('phoneError');
+            if (phone.value.length === 10){
+                errorSpan.style.display = 'none';
+            } else {
+                errorSpan.style.display = 'inline'; 
+            }
+        };
+        // onchange dropdown fee
+        // display changes based on the selected event type
+        const eventFee = document.getElementById('eventFee');
+        eventFee.onchange = function() {
+            document.getElementById('feeDisplay').textContent = "Fee: " + eventFee.value;
+        };
+
+
+
+        const submitBtn = document.getElementById('submitBtn');
+        submitBtn.onclick = function() {
+            alert("Feedback submitted successfully")
+        }
+
+
+      //double click event 
+      const eventImage = document.getElementById('eventImage');
+      eventImage.ondblclick = function() {
+        if (eventImage.style.width === "150px") {
+            eventImage.style.width = "300px";
+        } 
+        else {
+            eventImage.style.width = "150px";
+        }
+    };
+// character count using key events
+const feedback = document.getElementById('feedback');
+        feedback.oninput = function() {
+            document.getElementById('charCount').textContent = "Characters: " + feedback.value.length;
+        };
+
+                </script>
+
+</body>
+</html>

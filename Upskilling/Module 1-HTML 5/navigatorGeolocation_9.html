@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Find Nearby Events</title>
+</head>
+<body>
+
+    <h2>Event Locator</h2>
+    <p>Click the button below to find the nearest community events to your location.</p>
+
+    <button id="locationBtn">Find Nearby Events</button>
+
+    <p id="statusHeading"><strong>Status:</strong> Idle</p>
+    <p id="coordinatesDisplay"></p>
+
+    <script>
+        const locationBtn = document.getElementById('locationBtn');
+        const statusHeading = document.getElementById('statusHeading');
+        const coordinatesDisplay = document.getElementById('coordinatesDisplay');
+
+        function successCallback(position) {
+            statusHeading.textContent = "Status: Location found!";
+            
+            const latitude = position.coords.latitude;
+            const longitude = position.coords.longitude;
+            
+            // Display 
+            coordinatesDisplay.innerHTML = "Latitude: " + latitude + "<br>Longitude: " + longitude;
+        }
+
+        function errorCallback(error) {
+            coordinatesDisplay.textContent = ""; // Clear any old coordinates
+            
+            switch(error.code) {
+                case error.PERMISSION_DENIED:
+                    statusHeading.textContent = "Status: Error - Permission denied by user.";
+                    break;
+                case error.TIMEOUT:
+                    statusHeading.textContent = "Status: Error - The request timed out.";
+                    break;
+                case error.POSITION_UNAVAILABLE:
+                    statusHeading.textContent = "Status: Error - Location information is unavailable.";
+                    break;
+                default:
+                    statusHeading.textContent = "Status: An unknown error occurred.";
+                    break;
+            }
+        }
+
+        const locationOptions = {
+            enableHighAccuracy: true, 
+            timeout: 10000            // Gives the browser 10 seconds (10000ms) to respond before timing out
+        };
+
+        locationBtn.onclick = function() {
+            statusHeading.textContent = "Status: Searching for your location...";
+            
+            // Check if the browser supports Geolocation at all
+            if (navigator.geolocation) {
+                // This starts the actual location request
+                navigator.geolocation.getCurrentPosition(successCallback, errorCallback, locationOptions);
+            } else {
+                statusHeading.textContent = "Status: Error - Your browser does not support geolocation.";
+            }
+        };
+    </script>
+
+</body>
+</html>

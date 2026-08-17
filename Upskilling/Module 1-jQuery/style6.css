@@ -1,0 +1,8 @@
+#actionBox {
+    width: 200px;
+    height: 100px;
+    background-color: lightgray;
+    border: 2px solid black;
+    text-align: center;
+    line-height: 100px;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exercise 3</title>
+    <link rel="stylesheet" href="style3.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+
+    <button id="btnHide">Hide</button>
+    <button id="btnShow">Show</button>
+    <button id="btnFadeOut">Fade Out</button>
+    <button id="btnFadeIn">Fade In</button>
+    <button id="btnToggle">Toggle</button>
+    <button id="btnChain">Bonus Chain</button>
+
+    <div class="box">Box 1</div>
+    <div class="box">Box 2</div>
+    <div class="box">Box 3</div>
+
+    <script>
+        $(document).ready(function() {
+            $("#btnHide").click(function() {
+                $(".box").hide();
+            });
+
+            $("#btnShow").click(function() {
+                $(".box").show();
+            });
+
+            $("#btnFadeOut").click(function() {
+                $(".box").fadeOut();
+            });
+
+            $("#btnFadeIn").click(function() {
+                $(".box").fadeIn();
+            });
+
+            $("#btnToggle").click(function() {
+                $(".box").toggle();
+            });
+
+            $("#btnChain").click(function() {
+                $(".box").slideUp().delay(1000).slideDown();
+            });
+        });
+    </script>
+
+</body>
+</html>

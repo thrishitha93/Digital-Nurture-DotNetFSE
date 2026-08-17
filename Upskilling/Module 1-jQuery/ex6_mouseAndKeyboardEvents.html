@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exercise 6</title>
+    <link rel="stylesheet" href="style6.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+
+    <div id="actionBox">Interact with me!</div>
+    <br>
+    <input type="text" id="textInput" placeholder="Type something...">
+
+    <script>
+        $(document).ready(function() {
+            $("#actionBox").click(function() {
+                $(this).css("background-color", "yellow");
+            });
+
+            $("#actionBox").dblclick(function() {
+                $(this).text("Double Clicked!");
+            });
+
+            $("#actionBox").mouseenter(function() {
+                $(this).css("border-color", "red");
+            });
+
+            $("#actionBox").mouseleave(function() {
+                $(this).css("border-color", "black");
+            });
+
+            $("#textInput").keypress(function() {
+                alert("Key pressed!");
+            });
+        });
+    </script>
+
+</body>
+</html>

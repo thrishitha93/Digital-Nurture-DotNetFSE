@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script>
+
+const events=[
+
+{name:"Music",seats:20},
+
+{name:"Workshop",seats:0}
+
+];
+
+events.forEach(function(event){
+
+if(event.seats>0){
+
+console.log(event.name);
+
+}
+
+});
+
+try{
+
+let seats=0;
+
+if(seats<=0){
+
+throw "No Seats Available";
+
+}
+
+}
+
+catch(error){
+
+console.log(error);
+
+}
+
+</script>
+
+</body>
+</html>

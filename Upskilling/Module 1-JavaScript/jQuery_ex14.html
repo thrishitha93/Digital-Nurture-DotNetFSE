@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+</head>
+
+<body>
+
+<button id="registerBtn">
+Register
+</button>
+
+<div id="card">
+Event Card
+</div>
+
+<script>
+
+$("#registerBtn").click(
+
+function(){
+
+$("#card").fadeOut();
+
+setTimeout(function(){
+
+$("#card").fadeIn();
+
+},1000);
+
+}
+
+);
+
+</script>
+
+<p>
+
+Frameworks like React provide
+better component reuse and
+state management.
+
+</p>
+
+</body>
+</html>
