@@ -1,0 +1,76 @@
+<main class="dashboard">
+  <aside class="sidebar">
+    <div class="brand">
+      <div class="brand-mark">Q4</div>
+      <div>
+        <h2>ProjectHub</h2>
+      </div>
+    </div>
+
+    <nav class="nav">
+      <a class="nav-item active" href="#">Overview</a>
+      <a class="nav-item" href="#">Tasks</a>
+      <a class="nav-item" href="#">Reports</a>
+      <a class="nav-item" href="#">Clients</a>
+    </nav>
+
+    <div class="profile-card">
+      <span class="badge">Live</span>
+      <p>Team sync at 4:30 PM</p>
+    </div>
+  </aside>
+
+  <section class="content-panel">
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">Welcome back</p>
+        <h1>{{ title }}</h1>
+      </div>
+      <button class="primary-btn">New report</button>
+    </header>
+
+    <div class="stats-grid">
+      <article *ngFor="let item of stats" class="stat-card" [ngClass]="item.accent">
+        <span>{{ item.label }}</span>
+        <strong>{{ item.value }}</strong>
+        <small>{{ item.change }}</small>
+      </article>
+    </div>
+
+    <div class="bottom-grid">
+      <section class="panel">
+        <div class="panel-header">
+          <h3>Current tasks</h3>
+          <a href="#">View all</a>
+        </div>
+
+        <ul class="task-list">
+          <li *ngFor="let task of tasks">
+            <div class="task-dot" [ngClass]="task.color"></div>
+            <div>
+              <p>{{ task.name }}</p>
+              <span>{{ task.status }}</span>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section class="panel">
+        <div class="panel-header">
+          <h3>Recent activity</h3>
+          <a href="#">Today</a>
+        </div>
+
+        <div class="activity-list">
+          <div *ngFor="let item of activity" class="activity-item">
+            <span class="activity-bullet"></span>
+            <div>
+              <p>{{ item.text }}</p>
+              <small>{{ item.time }}</small>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </section>
+</main>

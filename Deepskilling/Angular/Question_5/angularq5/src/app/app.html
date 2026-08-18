@@ -1,0 +1,54 @@
+<div class="shop-container">
+  <div class="header">
+    <h1>{{ title }}</h1>
+    <p>Browse our collection of premium products</p>
+  </div>
+
+  <div class="controls">
+    <div class="search-box">
+      <input type="text" placeholder="Search products..." [(ngModel)]="searchQuery">
+    </div>
+    <div class="category-filter">
+      <button *ngFor="let cat of categories" 
+              class="category-btn" 
+              [class.active]="selectedCategory === cat"
+              (click)="selectCategory(cat)">
+        {{ cat }}
+      </button>
+    </div>
+  </div>
+
+  <div *ngIf="filteredProducts.length > 0; else noProducts" class="products-grid">
+    <div *ngFor="let product of filteredProducts" class="product-card">
+      <div class="product-image">{{ product.image }}</div>
+      <div class="product-body">
+        <div class="product-category">{{ product.category }}</div>
+        <h3 class="product-name">{{ product.name }}</h3>
+        
+        <div class="product-rating">
+          <span>{{ product.rating }} ★</span>
+          <small>({{ product.reviews }} reviews)</small>
+        </div>
+        
+        <div class="product-price">{{ product.price }}</div>
+        
+        <div class="product-stock" [class.out-of-stock]="!product.inStock">
+          {{ product.inStock ? "In Stock" : "Out of Stock" }}
+        </div>
+        
+        <button class="add-to-cart-btn" 
+                [disabled]="!product.inStock"
+                (click)="addToCart(product)">
+          {{ product.inStock ? "Add to Cart" : "Unavailable" }}
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <ng-template #noProducts>
+    <div class="empty-state">
+      <h3>No products found</h3>
+      <p>Try adjusting your search or filters</p>
+    </div>
+  </ng-template>
+</div>
