@@ -1,0 +1,14 @@
+C:\Users\Hmbk\Desktop\Upskilling\Module 3-C#\Exercise21\obj\Debug\net10.0\Exercise21.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Hmbk\Desktop\Upskilling\Module 3-C#\Exercise21\obj\Debug\net10.0\Exercise21.AssemblyInfoInputs.cache
+C:\Users\Hmbk\Desktop\Upskilling\Module 3-C#\Exercise21\obj\Debug\net10.0\Exercise21.AssemblyInfo.cs
+C:\Users\Hmbk\Desktop\Upskilling\Module 3-C#\Exercise21\obj\Debug\net10.0\Exercise21.csproj.CoreCompileInputs.cache
+C:\Users\Hmbk\Desktop\Upskilling\Module 3-C#\Exercise21\bin\Debug\net10.0\Exercise21.exe
+C:\Users\Hmbk\Desktop\Upskilling\Module 3-C#\Exercise21\bin\Debug\net10.0\Exercise21.deps.json
+C:\Users\Hmbk\Desktop\Upskilling\Module 3-C#\Exercise21\bin\Debug\net10.0\Exercise21.runtimeconfig.json
+C:\Users\Hmbk\Desktop\Upskilling\Module 3-C#\Exercise21\bin\Debug\net10.0\Exercise21.dll
+C:\Users\Hmbk\Desktop\Upskilling\Module 3-C#\Exercise21\bin\Debug\net10.0\Exercise21.pdb
+C:\Users\Hmbk\Desktop\Upskilling\Module 3-C#\Exercise21\obj\Debug\net10.0\Exercise21.dll
+C:\Users\Hmbk\Desktop\Upskilling\Module 3-C#\Exercise21\obj\Debug\net10.0\refint\Exercise21.dll
+C:\Users\Hmbk\Desktop\Upskilling\Module 3-C#\Exercise21\obj\Debug\net10.0\Exercise21.pdb
+C:\Users\Hmbk\Desktop\Upskilling\Module 3-C#\Exercise21\obj\Debug\net10.0\Exercise21.genruntimeconfig.cache
+C:\Users\Hmbk\Desktop\Upskilling\Module 3-C#\Exercise21\obj\Debug\net10.0\ref\Exercise21.dll

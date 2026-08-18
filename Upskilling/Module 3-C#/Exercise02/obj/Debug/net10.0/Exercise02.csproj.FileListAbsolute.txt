@@ -1,0 +1,14 @@
+C:\Users\Hmbk\Desktop\Upskilling\Module 3-C#\Exercise02\bin\Debug\net10.0\Exercise02.exe
+C:\Users\Hmbk\Desktop\Upskilling\Module 3-C#\Exercise02\bin\Debug\net10.0\Exercise02.deps.json
+C:\Users\Hmbk\Desktop\Upskilling\Module 3-C#\Exercise02\bin\Debug\net10.0\Exercise02.runtimeconfig.json
+C:\Users\Hmbk\Desktop\Upskilling\Module 3-C#\Exercise02\bin\Debug\net10.0\Exercise02.dll
+C:\Users\Hmbk\Desktop\Upskilling\Module 3-C#\Exercise02\bin\Debug\net10.0\Exercise02.pdb
+C:\Users\Hmbk\Desktop\Upskilling\Module 3-C#\Exercise02\obj\Debug\net10.0\Exercise02.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Hmbk\Desktop\Upskilling\Module 3-C#\Exercise02\obj\Debug\net10.0\Exercise02.AssemblyInfoInputs.cache
+C:\Users\Hmbk\Desktop\Upskilling\Module 3-C#\Exercise02\obj\Debug\net10.0\Exercise02.AssemblyInfo.cs
+C:\Users\Hmbk\Desktop\Upskilling\Module 3-C#\Exercise02\obj\Debug\net10.0\Exercise02.csproj.CoreCompileInputs.cache
+C:\Users\Hmbk\Desktop\Upskilling\Module 3-C#\Exercise02\obj\Debug\net10.0\Exercise02.dll
+C:\Users\Hmbk\Desktop\Upskilling\Module 3-C#\Exercise02\obj\Debug\net10.0\refint\Exercise02.dll
+C:\Users\Hmbk\Desktop\Upskilling\Module 3-C#\Exercise02\obj\Debug\net10.0\Exercise02.pdb
+C:\Users\Hmbk\Desktop\Upskilling\Module 3-C#\Exercise02\obj\Debug\net10.0\Exercise02.genruntimeconfig.cache
+C:\Users\Hmbk\Desktop\Upskilling\Module 3-C#\Exercise02\obj\Debug\net10.0\ref\Exercise02.dll
