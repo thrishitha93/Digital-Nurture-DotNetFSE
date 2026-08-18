@@ -1,0 +1,28 @@
+// Configuration file for conflict resolution practice
+// This file is intentionally structured for merge conflict exercises
+
+const databaseConfig = {
+  host: "localhost",
+  port: 5432,
+  database: "myapp_db",
+  username: "admin",
+  password: "password123"
+};
+
+const apiConfig = {
+  baseUrl: "http://localhost:3000",
+  timeout: 5000,
+  retries: 3
+};
+
+const appSettings = {
+  debug: true,
+  logLevel: "info",
+  environment: "development"
+};
+
+module.exports = {
+  databaseConfig,
+  apiConfig,
+  appSettings
+};
